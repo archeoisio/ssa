@@ -20,15 +20,15 @@ var style_affore23_8 = function(feature, resolution){
     if ("" !== null) {
         labelText = String("");
     }
-    if (value >= 0.000000 && value <= 42.890000) {
+    if (value >= 30.000000 && value <= 40.000000) {
             style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 2.0 + size,
+        image: new ol.style.Circle({radius: 4.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(108,199,29,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 42.890000 && value <= 45.360000) {
+                    } else if (value >= 40.000000 && value <= 45.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 6.5 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(108,199,29,1.0)'})}),
@@ -36,7 +36,7 @@ var style_affore23_8 = function(feature, resolution){
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 45.360000 && value <= 47.700000) {
+                    } else if (value >= 45.000000 && value <= 50.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 11.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(108,199,29,1.0)'})}),
@@ -44,7 +44,7 @@ var style_affore23_8 = function(feature, resolution){
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 47.700000 && value <= 49.790000) {
+                    } else if (value >= 50.000000 && value <= 60.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 15.5 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(108,199,29,1.0)'})}),
@@ -52,7 +52,7 @@ var style_affore23_8 = function(feature, resolution){
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 49.790000 && value <= 61.260000) {
+                    } else if (value >= 60.000000 && value <= 70.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 20.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(108,199,29,1.0)'})}),
