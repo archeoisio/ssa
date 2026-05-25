@@ -9,10 +9,10 @@ var style_labels_9 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "0.0px \'Roboto Black\', sans-serif";
-    var labelFill = "#000000";
-    var bufferColor = "";
-    var bufferWidth = 0;
+    var labelFont = "12px 'Roboto Black', sans-serif";
+    var labelFill = "#000000";   // Testo Nero
+    var bufferColor = "#ffffff"; // Alone bianco dietro al testo per leggibilità
+    var bufferWidth = 2;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
