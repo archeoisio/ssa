@@ -7,71 +7,27 @@ var style_labels_9 = function(feature, resolution){
         variables: {}
     };
     
-    var labelText = ""; 
-    var labelFont = "0.0px \'Roboto Black\', sans-serif";
-    var labelFill = "#000000";
-    var bufferColor = "";
-    var bufferWidth = 0;
+    // Recupera il testo dalla colonna 'SEZIONE' del tuo database
+    var labelText = "";
+    if (feature.get("SEZIONE") !== null) {
+        labelText = String(feature.get("SEZIONE"));
+    }
+    
+    var labelFont = "12px 'Arial', sans-serif";
+    var labelFill = "#333333"; // Colore del testo (Grigio scuro/Nero)
+    var bufferColor = "#ffffff"; // Contorno bianco per rendere leggibile il testo sulla mappa
+    var bufferWidth = 3;         // Spessore del contorno bianco
     var textAlign = "center";
-    var offsetX = 15;
-    var offsetY = 10;
-    var feature
-	var value
-    var clusteredFeatures = feature.get("features");
-    size = clusteredFeatures.length;
-    if (size == 1) { // If cluster has one feature
-        var feature = clusteredFeatures[0];
-        value = clusteredFeatures[0].get("");
-        if (feature.get("SEZIONE") !== null && resolution > 0 && resolution < 280) {
-            labelText = String(feature.get("SEZIONE"));
-        }
-    } else { // If cluster has more than one feature
-		labelText = size.toString();
-		var radius = 6 + Math.log(size) * 3;
-		var maxClusterSize = 80;
-		var relativeSize = Math.min(size / maxClusterSize, 1);
-		var redComponent, greenComponent, blueComponent = 0;
-		if (relativeSize < 0.5) {
-			redComponent = Math.floor(210 * (relativeSize / 0.5));
-			greenComponent = 210;
-		} else {
-			redComponent = 210;
-			greenComponent = Math.floor(210 * (1 - (relativeSize - 0.5) / 0.5));
-		}
-		var color = `rgba(${redComponent}, ${greenComponent}, ${blueComponent}, 0.75)`;
-		return [
-			new ol.style.Style({
-				image: new ol.style.Circle({
-					radius: radius + 4,
-					fill: new ol.style.Fill({
-						color: `rgba(${redComponent}, ${greenComponent}, ${blueComponent}, 0.3)`
-					})
-				})
-			}),
-			new ol.style.Style({
-				image: new ol.style.Circle({
-					radius: radius,
-					fill: new ol.style.Fill({
-						color: color
-					})
-				}),
-				text: new ol.style.Text({
-					font: labelFont,
-					text: labelText,
-					fill: new ol.style.Fill({
-						color: labelFill
-					}),
-					placement: placement
-				})
-			})
-		];
-	}
+    var offsetX = 0;
+    var offsetY = 0;
+    var placement = 'point';
+
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(231,113,72,0.0)'})}),
+        // Abbiamo rimosso la parte 'image:' o 'stroke/fill' del punto geometrico.
+        // Lasciamo solo il componente del testo.
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
-                              bufferWidth)
+                              bufferWidth, textAlign, offsetX, offsetY)
     })];
 
     return style;
