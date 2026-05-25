@@ -103,12 +103,8 @@ var lyr_affore12_6 = new ol.layer.Vector({
                 style: style_affore12_6,
                 popuplayertitle: 'aff ore 12',
                 interactive: true,
-    title: 'aff ore 12<br />\
-    <img src="styles/legend/affore12_6_0.png" /> 0 - 11.37 %<br />\
-    <img src="styles/legend/affore12_6_1.png" /> 11.37 - 12.24 %<br />\
-    <img src="styles/legend/affore12_6_2.png" /> 12.24 - 13.36 %<br />\
-    <img src="styles/legend/affore12_6_3.png" /> 13.36 - 14.51 %<br />\
-    <img src="styles/legend/affore12_6_4.png" /> 14.51 - 17.66 %<br />' });
+                title: 'aff ore 12<br /><img src="styles/legend/affore12_6_0.png" /> 0 - 11.37 %<br /><img src="styles/legend/affore12_6_1.png" /> 11.37 - 12.24 %<br /><img src="styles/legend/affore12_6_2.png" /> 12.24 - 13.36 %<br /><img src="styles/legend/affore12_6_3.png" /> 13.36 - 14.51 %<br /><img src="styles/legend/affore12_6_4.png" /> 14.51 - 17.66 %<br />' 
+            });
 var format_affore19_7 = new ol.format.GeoJSON();
 var features_affore19_7 = format_affore19_7.readFeatures(json_affore19_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -122,12 +118,8 @@ var lyr_affore19_7 = new ol.layer.Vector({
                 style: style_affore19_7,
                 popuplayertitle: 'aff ore 19',
                 interactive: true,
-    title: 'aff ore 19<br />\
-    <img src="styles/legend/affore19_7_0.png" /> 0 - 31.3 %<br />\
-    <img src="styles/legend/affore19_7_1.png" /> 31.3 - 33.3 %<br />\
-    <img src="styles/legend/affore19_7_2.png" /> 33.3 - 34.7 %<br />\
-    <img src="styles/legend/affore19_7_3.png" /> 34.7 - 36.7 %<br />\
-    <img src="styles/legend/affore19_7_4.png" /> 36.7 - 41.6 %<br />' });
+                title: 'aff ore 19<br /><img src="styles/legend/affore19_7_0.png" /> 0 - 31.3 %<br /><img src="styles/legend/affore19_7_1.png" /> 31.3 - 33.3 %<br /><img src="styles/legend/affore19_7_2.png" /> 33.3 - 34.7 %<br /><img src="styles/legend/affore19_7_3.png" /> 34.7 - 36.7 %<br /><img src="styles/legend/affore19_7_4.png" /> 36.7 - 41.6 %<br />' 
+            });
 var format_affore23_8 = new ol.format.GeoJSON();
 var features_affore23_8 = format_affore23_8.readFeatures(json_affore23_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -141,12 +133,8 @@ var lyr_affore23_8 = new ol.layer.Vector({
                 style: style_affore23_8,
                 popuplayertitle: 'aff ore 23',
                 interactive: true,
-    title: 'aff ore 23<br />\
-    <img src="styles/legend/affore23_8_0.png" /> 0 - 42.9 %<br />\
-    <img src="styles/legend/affore23_8_1.png" /> 42.9 - 45.4 %<br />\
-    <img src="styles/legend/affore23_8_2.png" /> 45.4 - 47.7 %<br />\
-    <img src="styles/legend/affore23_8_3.png" /> 47.7 - 49.8 %<br />\
-    <img src="styles/legend/affore23_8_4.png" /> 49.8 - 61.3 %<br />' });
+                title: 'aff ore 23<br /><img src="styles/legend/affore23_8_0.png" /> 0 - 42.9 %<br /><img src="styles/legend/affore23_8_1.png" /> 42.9 - 45.4 %<br /><img src="styles/legend/affore23_8_2.png" /> 45.4 - 47.7 %<br /><img src="styles/legend/affore23_8_3.png" /> 47.7 - 49.8 %<br /><img src="styles/legend/affore23_8_4.png" /> 49.8 - 61.3 %<br />' 
+            });
 var format_labels_9 = new ol.format.GeoJSON();
 var features_labels_9 = format_labels_9.readFeatures(json_labels_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -162,17 +150,17 @@ var lyr_labels_9 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/labels_9.png" /> labels'
             });
+
 var group_sezioni2021 = new ol.layer.Group({
-                                layers: [lyr_affore12_6,lyr_affore19_7,lyr_affore23_8,lyr_labels_9,],
+                                layers: [lyr_affore12_6,lyr_affore19_7,lyr_affore23_8,lyr_labels_9],
                                 fold: 'open',
                                 title: 'sezioni 2021'});
-var group_H703 = new ol.layer.Group({
-                                layers: [],
-                                fold: 'open',
-                                title: 'H703'});
 
 lyr_confinisal_0.setVisible(true);lyr_CURVELIVELLOSA_1.setVisible(true);lyr_WATERWAYSSA_2.setVisible(true);lyr_STRADESA_3.setVisible(true);lyr_RAILSA_4.setVisible(true);lyr_EDIFICISA_5.setVisible(true);lyr_affore12_6.setVisible(false);lyr_affore19_7.setVisible(false);lyr_affore23_8.setVisible(false);lyr_labels_9.setVisible(true);
+
+// Aggiornato includendo correttamente le strutture e rimuovendo il gruppo H703 che era vuoto e non mappato
 var layersList = [lyr_confinisal_0,lyr_CURVELIVELLOSA_1,lyr_WATERWAYSSA_2,lyr_STRADESA_3,lyr_RAILSA_4,lyr_EDIFICISA_5,group_sezioni2021];
+
 lyr_confinisal_0.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'descriptio': 'descriptio', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMo': 'altitudeMo', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', 'LINKZONA': 'LINKZONA', 'CODCOM': 'CODCOM', 'CODZONA': 'CODZONA', 'Area_terri': 'Area_terri', 'Regione': 'Regione', 'Prov': 'Prov', 'Comune_IST': 'Comune_IST', 'Comune_cat': 'Comune_cat', 'Sez': 'Sez', 'Comune_amm': 'Comune_amm', 'Comune_des': 'Comune_des', 'Fascia': 'Fascia', 'LinkZona_1': 'LinkZona_1', 'Cod_Tip': 'Cod_Tip', 'Descr_Tipo': 'Descr_Tipo', 'Stato': 'Stato', 'Stato_prev': 'Stato_prev', 'Compr_min': 'Compr_min', 'Compr_max': 'Compr_max', 'Sup_NL_com': 'Sup_NL_com', 'Loc_min': 'Loc_min', 'Loc_max': 'Loc_max', 'Sup_NL_loc': 'Sup_NL_loc', 'auxiliary_': 'auxiliary_', 'auxiliar_1': 'auxiliar_1', 'auxiliar_2': 'auxiliar_2', 'auxiliar_3': 'auxiliar_3', 'auxiliar_4': 'auxiliar_4', 'auxiliar_5': 'auxiliar_5', 'auxiliar_6': 'auxiliar_6', 'auxiliar_7': 'auxiliar_7', 'auxiliar_8': 'auxiliar_8', 'auxiliar_9': 'auxiliar_9', 'auxiliar10': 'auxiliar10', 'auxiliar11': 'auxiliar11', 'auxiliar12': 'auxiliar12', 'auxiliar13': 'auxiliar13', 'auxiliar14': 'auxiliar14', 'auxiliar15': 'auxiliar15', 'auxiliar16': 'auxiliar16', 'auxiliar17': 'auxiliar17', 'auxiliar18': 'auxiliar18', 'auxiliar19': 'auxiliar19', 'auxiliar20': 'auxiliar20', 'auxiliar21': 'auxiliar21', 'auxiliar22': 'auxiliar22', 'auxiliar23': 'auxiliar23', 'auxiliar24': 'auxiliar24', 'auxiliar25': 'auxiliar25', 'auxiliar26': 'auxiliar26', 'auxiliar27': 'auxiliar27', 'auxiliar28': 'auxiliar28', 'auxiliar29': 'auxiliar29', 'auxiliar30': 'auxiliar30', 'auxiliar31': 'auxiliar31', 'auxiliar32': 'auxiliar32', });
 lyr_CURVELIVELLOSA_1.set('fieldAliases', {'fid': 'fid', 'cat': 'cat', 'level': 'level', 'tipo': 'tipo', });
 lyr_WATERWAYSSA_2.set('fieldAliases', {'osm_id': 'osm_id', 'code': 'code', 'fclass': 'fclass', 'width': 'width', 'name': 'name', });
