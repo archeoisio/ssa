@@ -103,7 +103,7 @@ var lyr_affore12_6 = new ol.layer.Vector({
                 style: style_affore12_6,
                 popuplayertitle: 'aff ore 12',
                 interactive: true,
-                title: 'aff ore 12<br /><img src="styles/legend/affore12_6_0.png" /> 0 - 11.37 %<br /><img src="styles/legend/affore12_6_1.png" /> 11.37 - 12.24 %<br /><img src="styles/legend/affore12_6_2.png" /> 12.24 - 13.36 %<br /><img src="styles/legend/affore12_6_3.png" /> 13.36 - 14.51 %<br /><img src="styles/legend/affore12_6_4.png" /> 14.51 - 17.66 %<br />' 
+                title: 'aff ore 12<br /><img src="styles/legend/affore12_6_0.png" width="10" height="10" /> 0 - 15 %<br /><img src="styles/legend/affore12_6_1.png" width="19" height="19" /> 15 - 20 %<br /><img src="styles/legend/affore12_6_2.png" width="28" height="28" /> 20 - 40 %<br /><img src="styles/legend/affore12_6_3.png" width="37" height="37" /> 40 - 60 %<br /><img src="styles/legend/affore12_6_4.png" width="46" height="46" /> 60 - 80 %<br />' 
             });
 var format_affore19_7 = new ol.format.GeoJSON();
 var features_affore19_7 = format_affore19_7.readFeatures(json_affore19_7, 
@@ -118,7 +118,7 @@ var lyr_affore19_7 = new ol.layer.Vector({
                 style: style_affore19_7,
                 popuplayertitle: 'aff ore 19',
                 interactive: true,
-                title: 'aff ore 19<br /><img src="styles/legend/affore19_7_0.png" /> 0 - 31.3 %<br /><img src="styles/legend/affore19_7_1.png" /> 31.3 - 33.3 %<br /><img src="styles/legend/affore19_7_2.png" /> 33.3 - 34.7 %<br /><img src="styles/legend/affore19_7_3.png" /> 34.7 - 36.7 %<br /><img src="styles/legend/affore19_7_4.png" /> 36.7 - 41.6 %<br />' 
+                title: 'aff ore 19<br /><img src="styles/legend/affore19_7_0.png" width="10" height="10" /> 0 - 15 %<br /><img src="styles/legend/affore19_7_1.png" width="19" height="19" /> 15 - 20 %<br /><img src="styles/legend/affore19_7_2.png" width="28" height="28" /> 20 - 40 %<br /><img src="styles/legend/affore19_7_3.png" width="37" height="37" /> 40 - 60 %<br /><img src="styles/legend/affore19_7_4.png" width="46" height="46" /> 60 - 80 %<br />' 
             });
 var format_affore23_8 = new ol.format.GeoJSON();
 var features_affore23_8 = format_affore23_8.readFeatures(json_affore23_8, 
@@ -133,7 +133,7 @@ var lyr_affore23_8 = new ol.layer.Vector({
                 style: style_affore23_8,
                 popuplayertitle: 'aff ore 23',
                 interactive: true,
-                title: 'aff ore 23<br /><img src="styles/legend/affore23_8_0.png" /> 0 - 42.9 %<br /><img src="styles/legend/affore23_8_1.png" /> 42.9 - 45.4 %<br /><img src="styles/legend/affore23_8_2.png" /> 45.4 - 47.7 %<br /><img src="styles/legend/affore23_8_3.png" /> 47.7 - 49.8 %<br /><img src="styles/legend/affore23_8_4.png" /> 49.8 - 61.3 %<br />' 
+                title: 'aff ore 23<br /><img src="styles/legend/affore23_8_0.png" width="10" height="10" /> 0 - 15 %<br /><img src="styles/legend/affore23_8_1.png" width="19" height="19" /> 15 - 20 %<br /><img src="styles/legend/affore23_8_2.png" width="28" height="28" /> 20 - 40 %<br /><img src="styles/legend/affore23_8_3.png" width="37" height="37" /> 40 - 60 %<br /><img src="styles/legend/affore23_8_4.png" width="46" height="46" /> 60 - 80 %<br />' 
             });
 var format_labels_9 = new ol.format.GeoJSON();
 var features_labels_9 = format_labels_9.readFeatures(json_labels_9, 
