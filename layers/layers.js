@@ -90,6 +90,8 @@ var lyr_EDIFICISA_5 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/EDIFICISA_5.png" /> EDIFICI-SA'
             });
+
+// LIVELLO ORE 12 - Modificato: rimosso il cluster, ora legge jsonSource_affore12_6
 var format_affore12_6 = new ol.format.GeoJSON();
 var features_affore12_6 = format_affore12_6.readFeatures(json_affore12_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -97,22 +99,21 @@ var jsonSource_affore12_6 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_affore12_6.addFeatures(features_affore12_6);
-cluster_affore12_6 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_affore12_6
-});
+
 var lyr_affore12_6 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_affore12_6, 
+                source:jsonSource_affore12_6, 
                 style: style_affore12_6,
                 popuplayertitle: 'aff ore 12',
                 interactive: true,
-    title: 'aff ore 12<br />\
+                title: 'aff ore 12<br />\
     <img src="styles/legend/affore12_6_0.png" /> 0 - 11.37 %<br />\
     <img src="styles/legend/affore12_6_1.png" /> 11.37 - 12.24 %<br />\
     <img src="styles/legend/affore12_6_2.png" /> 12.24 - 13.36 %<br />\
     <img src="styles/legend/affore12_6_3.png" /> 13.36 - 14.51 %<br />\
     <img src="styles/legend/affore12_6_4.png" /> 14.51 - 17.66 %<br />' });
+
+// LIVELLO ORE 19 - Modificato: rimosso il cluster, ora legge jsonSource_affore19_7
 var format_affore19_7 = new ol.format.GeoJSON();
 var features_affore19_7 = format_affore19_7.readFeatures(json_affore19_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -120,22 +121,21 @@ var jsonSource_affore19_7 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_affore19_7.addFeatures(features_affore19_7);
-cluster_affore19_7 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_affore19_7
-});
+
 var lyr_affore19_7 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_affore19_7, 
+                source:jsonSource_affore19_7, 
                 style: style_affore19_7,
                 popuplayertitle: 'aff ore 19',
                 interactive: true,
-    title: 'aff ore 19<br />\
+                title: 'aff ore 19<br />\
     <img src="styles/legend/affore19_7_0.png" /> 0 - 31.3 %<br />\
     <img src="styles/legend/affore19_7_1.png" /> 31.3 - 33.3 %<br />\
     <img src="styles/legend/affore19_7_2.png" /> 33.3 - 34.7 %<br />\
     <img src="styles/legend/affore19_7_3.png" /> 34.7 - 36.7 %<br />\
     <img src="styles/legend/affore19_7_4.png" /> 36.7 - 41.6 %<br />' });
+
+// LIVELLO ORE 23 - Modificato: rimosso il cluster, ora legge jsonSource_affore23_8
 var format_affore23_8 = new ol.format.GeoJSON();
 var features_affore23_8 = format_affore23_8.readFeatures(json_affore23_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -143,22 +143,21 @@ var jsonSource_affore23_8 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_affore23_8.addFeatures(features_affore23_8);
-cluster_affore23_8 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_affore23_8
-});
+
 var lyr_affore23_8 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_affore23_8, 
+                source:jsonSource_affore23_8, 
                 style: style_affore23_8,
                 popuplayertitle: 'aff ore 23',
                 interactive: true,
-    title: 'aff ore 23<br />\
+                title: 'aff ore 23<br />\
     <img src="styles/legend/affore23_8_0.png" /> 0 - 42.9 %<br />\
     <img src="styles/legend/affore23_8_1.png" /> 42.9 - 45.4 %<br />\
     <img src="styles/legend/affore23_8_2.png" /> 45.4 - 47.7 %<br />\
     <img src="styles/legend/affore23_8_3.png" /> 47.7 - 49.8 %<br />\
     <img src="styles/legend/affore23_8_4.png" /> 49.8 - 61.3 %<br />' });
+
+// LIVELLO ETICHETTE LEGEND - Modificato: rimosso il cluster, ora legge jsonSource_labels_9
 var format_labels_9 = new ol.format.GeoJSON();
 var features_labels_9 = format_labels_9.readFeatures(json_labels_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -166,18 +165,16 @@ var jsonSource_labels_9 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_labels_9.addFeatures(features_labels_9);
-cluster_labels_9 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_labels_9
-});
+
 var lyr_labels_9 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_labels_9, 
+                source:jsonSource_labels_9, 
                 style: style_labels_9,
                 popuplayertitle: 'labels',
                 interactive: false,
                 title: '<img src="styles/legend/labels_9.png" /> labels'
             });
+
 var group_sezioni2021 = new ol.layer.Group({
                                 layers: [lyr_affore12_6,lyr_affore19_7,lyr_affore23_8,lyr_labels_9,],
                                 fold: 'open',
